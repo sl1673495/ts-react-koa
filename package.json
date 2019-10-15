@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "client:dev": "scripty",
     "client:prod": "scripty",
     "client:server": "scripty"
@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.0",
     "mobx": "^5.14.0",
     "mobx-react-lite": "^1.4.1",
     "react": "^16.10.2",
@@ -29,13 +30,17 @@
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
     "@babel/preset-typescript": "^7.6.0",
-    "@types/react": "^16.9.5",
+    "@testing-library/react": "^9.3.0",
+    "@types/react": "^16.9.6",
     "@types/react-dom": "^16.9.1",
     "@types/react-router-dom": "^5.1.0",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
     "friendly-errors-webpack-plugin": "^1.7.0",
+    "jest": "^24.9.0",
     "json2ts": "^0.0.7",
+    "mocha": "^6.2.1",
+    "mochawesome": "^4.1.0",
     "typescript": "^3.6.4",
     "webpack": "^4.41.1",
     "webpack-build-notifier": "^1.1.1",
