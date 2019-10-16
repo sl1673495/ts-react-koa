@@ -1,0 +1,101 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-10-16T08:49:56.906Z",
+    "end": "2019-10-16T08:49:56.938Z",
+    "duration": 32,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6e1c1cc1-fb6a-4d95-8553-c173cac0a1ec",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7e5436cd-9801-4472-a81f-838d53c5d851",
+          "title": "基础Service接口测试",
+          "fullFile": "/Users/shanshihao/Project/ts-koa/tests/server/router.spec.js",
+          "file": "/tests/server/router.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "getHello测试",
+              "fullTitle": "基础Service接口测试 getHello测试",
+              "timedOut": false,
+              "duration": 24,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "axios.get('http://localhost:3000/api/hello')\n  .then((resp) => {\n    const result =  resp.data.data\n    if (result === 'Hello World!') {\n      done()\n    }\n  })",
+              "err": {},
+              "uuid": "bc12a88d-c68c-4dc2-b31c-c87994859ed6",
+              "parentUUID": "7e5436cd-9801-4472-a81f-838d53c5d851",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bc12a88d-c68c-4dc2-b31c-c87994859ed6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 24,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./docs/mochawesome"
+      },
+      "version": "4.0.1"
+    }
+  }
+}
